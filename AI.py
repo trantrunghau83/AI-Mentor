@@ -72,7 +72,7 @@ with tabs[0]:
         st.markdown("### 3. Thảo luận cùng AI Mentor")
         
         if "messages" not in st.session_state:
-            st.session_state.messages = [{"role": "ai", "content": "Chào em! Thầy Hậu đã huấn luyện thầy để giúp em chinh phục bài học này. Em đang gặp khó khăn ở bước nào?"}]
+            st.session_state.messages = [{"role": "ai", "content": "Chào em! Thầy Hậu đã huấn luyện cho mình AI để giúp em chinh phục bài học này. Em đang gặp khó khăn ở bước nào?"}]
 
         for msg in st.session_state.messages:
             st.chat_message(msg["role"]).write(msg["content"])
@@ -112,7 +112,7 @@ with tabs[0]:
 
 # --- TAB 2: THỐNG KÊ DÀNH CHO GIÁO VIÊN ---
 with tabs[1]:
-    st.title("📊 Hệ thống quản lý & Thống kê Sáng kiến")
+    st.title("📊 Hệ thống quản lý & Thống kê")
     
     if os.path.isfile(LOG_FILE):
         df = pd.read_csv(LOG_FILE)
@@ -131,12 +131,12 @@ with tabs[1]:
         daily_counts = df.resample('D', on='Thời gian').count()['Câu hỏi']
         st.line_chart(daily_counts)
         
-        st.markdown("### 📋 Nhật ký tương tác chi tiết (Dùng làm minh chứng nộp kèm)")
+        st.markdown("### 📋 Nhật ký tương tác chi tiết")
         st.dataframe(df, use_container_width=True)
         
         # Nút tải file minh chứng
         st.download_button(
-            label="📥 Tải file CSV minh chứng (Nộp Hội đồng)",
+            label="📥 Tải file CSV minh chứng",
             data=df.to_csv(index=False).encode('utf-8-sig'),
             file_name=f"Minh_chung_AI_Mentor_{datetime.date.today()}.csv",
             mime='text/csv',
