@@ -113,3 +113,5 @@ with col2:
         
         # Lưu câu trả lời của AI vào bộ nhớ
         st.session_state.messages.append({"role": "ai", "content": reply})
+st.markdown("---")
+st.markdown("<p style='text-align: center; color: gray; font-size: 12px;'>Phát triển bởi Thầy Trần Trung Hậu - Trường THCS Thuận Hưng, phường Thuận Hưng tháng 9/2025</p>", unsafe_allow_html=True)
