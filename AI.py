@@ -56,4 +56,4 @@ with col2:
                 st.markdown(f'<div class="chat-container"><span class="ai-msg">AI Mentor:</span> Chào em! Em đừng lo. {reply}</div>', unsafe_allow_html=True)
 
 st.markdown("---")
-st.markdown("<p style='text-align: center; color: gray; font-size: 12px;'>Phát triển bởi Thầy Trần Trung Hậu - Trường THCS Thuận Hưng - Phường Thuận Hưng 9/2025</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: gray; font-size: 12px;'>Phát triển bởi Thầy Trần Trung Hậu - Trường THCS Thuận Hưng - Phường Thuận Hưng  tháng 9/2025</p>", unsafe_allow_html=True)
