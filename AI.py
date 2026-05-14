@@ -60,7 +60,7 @@ lessons = {
     },
     "Bài 14 (Lớp 7): Thuật toán tìm kiếm": {
         "mã": "3.4.TC1a",
-        "tình_huống": "Em có một xấp bài kiểm tra đã sắp xếp theo thứ tự A, B, C... Làm sao tìm ra bài của bạn 'Trần Trung Hậu' nhanh nhất?",
+        "tình_huống": "Em có một xấp bài kiểm tra đã sắp xếp theo thứ tự A, B, C... Làm sao tìm ra bài của bạn 'Trần Trung An' nhanh nhất?",
         "keywords": {
             "chia đôi": "Chính xác! Vì danh sách đã SẮP XẾP, em rút ngay bài ở giữa. Nếu vần H nằm trước, em bỏ luôn nửa xấp bài phía sau. Em nhớ thuật toán này gọi là gì không?",
             "giữa": "Tư duy rất tuyệt! Kiểm tra phần tử ở giữa là bước đầu tiên của Thuật toán Tìm kiếm nhị phân. Nó giúp em thu hẹp phạm vi tìm kiếm đi một nửa sau mỗi lần đoán.",
